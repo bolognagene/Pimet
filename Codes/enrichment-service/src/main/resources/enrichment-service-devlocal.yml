@@ -1,0 +1,9 @@
+server:
+  port: 10051
+spring:
+  application:
+    name: enrichment-service
+    # mysql or neo4j, if this item is not set, then mysql is default integration
+    integration: neo4j
+
+

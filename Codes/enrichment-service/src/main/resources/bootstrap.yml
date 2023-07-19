@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: enrichment-service
+  profiles:
+    active: @spring.profiles.active@
+  cloud:
+    nacos:
+      config:
+        server-addr: @spring.cloud.nacos.config.server-addr@
+        file-extension: yml
+        refresh-enabled: true
+        namespace: @spring.cloud.nacos.discovery.namespace@
+        timeout: 5000
+        config-long-poll-timeout: 1000
+        config-retry-time: 2000
+        max-retry: 3
+        shared-configs:
+          - dataId: mysql-@spring.cloud.nacos.discovery.namespace@.yml
+            refresh: true
+          #- dataId: kafka-@spring.cloud.nacos.discovery.namespace@.yml
+          #  refresh: true
+          #- dataId: xxljob-@spring.cloud.nacos.discovery.namespace@.yml
+          #  refresh: true
+          - dataId: neo4j-@spring.cloud.nacos.discovery.namespace@.yml
+            refresh: true
+      discovery:
+        server-addr: @spring.cloud.nacos.discovery.server-addr@
+        namespace: @spring.cloud.nacos.discovery.namespace@
+        heart-beat-interval: 5000
+        heart-beat-timeout: 20000

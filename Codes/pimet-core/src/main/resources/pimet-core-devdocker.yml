@@ -1,0 +1,20 @@
+server:
+  port: 10001
+spring:
+  application:
+    name: pimet-core
+  main:
+    allow-bean-definition-overriding: true
+
+  # kafka
+  kafka:
+    realtime-alarm-topic: rt-alarm
+    tt-req-topic: tt-req
+    tt-resp-topic: tt-resp
+
+am-configs:
+  sources:
+    nsp:
+      auto-clear-policy: FieldAlarmAgentId
+      similar-alarm-policy: None
+      tech-domain: Core

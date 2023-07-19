@@ -1,0 +1,10 @@
+server:
+  port: 10061
+spring:
+  application:
+    name: fronted-service
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+

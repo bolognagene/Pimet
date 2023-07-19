@@ -1,0 +1,10 @@
+xxl:
+  job:
+    accessToken: default_token
+    admin:
+      addresses: http://192.168.181.130:8099/xxl-job-admin
+    executor:
+      appname: pimet-core-xxl-job-executor
+      logpath: C:/Work/IT/nohpe/springboot/workspace/pimet/pimet-core/logs
+      logretentiondays: 30
+      port: 9999

@@ -1,0 +1,7 @@
+spring:
+  # Neo4j DataSource Config
+  neo4j:
+    uri: bolt://172.17.0.1:7687
+    authentication:
+      username: neo4j
+      password: pimetpimet

@@ -1,0 +1,10 @@
+server:
+  port: 10071
+spring:
+  application:
+    name: tt-service
+
+  # kafka
+  kafka:
+    tt-req-topic: tt-req
+    tt-resp-topic: tt-resp

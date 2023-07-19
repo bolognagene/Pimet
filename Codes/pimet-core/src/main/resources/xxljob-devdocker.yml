@@ -1,0 +1,10 @@
+xxl:
+  job:
+    accessToken: default_token
+    admin:
+      addresses: http://172.17.0.1:8099/xxl-job-admin
+    executor:
+      appname: pimet-core-xxl-job-executor
+      logpath: /tmp/logs
+      logretentiondays: 30
+      port: 9999

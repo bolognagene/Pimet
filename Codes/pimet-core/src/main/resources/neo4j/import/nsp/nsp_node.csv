@@ -1,0 +1,4 @@
+node_name,ne_type,ne_status,ne_level,country,province,city,district,address,source,technology,sub_tech
+ie680viwf01-lab,nfmp,In service,LAB,China,Hubei,Wuhan,Jianghan,,nsp,Core,
+ie680vcmm01-lab-necc0.local,nfmp,In service,LAB,China,Hubei,Wuhan,Jiangan,Road A Num 3,nsp,Core,
+ie680vcmm01-lab,nfmp,In service,LAB,China,Hubei,Huanggang,Huangzhou,,nsp,Core,

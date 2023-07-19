@@ -1,0 +1,21 @@
+spring:
+  kafka:
+    bootstrap-servers: 172.17.0.1:9092
+    producer:
+      retries: 3
+      batch-size: 16384
+      buffer-memory: 33554432
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    listener:
+      #ack-mode: manual_immediate
+      ack-mode: RECORD
+      missing-topics-fatal: false
+    consumer:
+      group-id: pimet-group
+      enable-auto-commit: false
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "*"
